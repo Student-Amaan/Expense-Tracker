@@ -1,0 +1,124 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Body Background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #4facfe, #ff6ec4, #f9f871);
+}
+
+/* Main Container */
+.container {
+  width: 380px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  text-align: center;
+}
+
+/* Title */
+.container h1 {
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Form */
+#expense-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Inputs */
+#expense-form input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 14px;
+}
+
+#expense-form input::placeholder {
+  color: #eee;
+}
+
+/* Button */
+#expense-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #4facfe, #ff6ec4);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#expense-form button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(45deg, #ff6ec4, #f9f871);
+}
+
+/* Expense List */
+#expense-list {
+  list-style: none;
+  margin-top: 15px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* List Item */
+#expense-list li {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Delete Button */
+.delete-btn {
+  background: linear-gradient(45deg, #ff4e50, #f9d423);
+  border: none;
+  padding: 5px 8px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Total Section */
+#total {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #4facfe, #ff6ec4, #f9f871);
+  color: #000;
+  font-weight: bold;
+}
+
+/* Scrollbar Styling */
+#expense-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+#expense-list::-webkit-scrollbar-thumb {
+  background: #ff6ec4;
+  border-radius: 10px;
+}
